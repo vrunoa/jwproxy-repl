@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+var repl = require('../lib/').default;
+var argv = require("minimist")(process.argv.slice(2));
+try { 
+  repl(argv["opts"]);
+} catch(e) {
+  console.error(e);
+  process.exit(1);
+}
