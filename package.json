@@ -1,14 +1,18 @@
 {
   "name": "jwproxy-repl",
   "version": "1.0.0",
-  "description": "",
+  "description": "A JWProxy server REPL to play with webdriver requests",
   "main": "./lib/index.js",
   "scripts": {
     "start": "./bin/repl"
   },
+  "preferGlobal": true,
   "bin": {
-    "appium-adb-repl": "./bin/repl"
+    "jwproxy-repl": "./bin/repl"
   },
+  "files": [
+    "caps.js", "./bin/*", "./lib/*"
+  ],
   "engines": {
     "node": ">=10"
   },
