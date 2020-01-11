@@ -11,11 +11,6 @@
   "bin": {
     "jwproxy-repl": "./bin/repl"
   },
-  "files": [
-    "jwproxy-repl-caps.js",
-    "./bin/*",
-    "./lib/*"
-  ],
   "engines": {
     "node": ">=10"
   },
