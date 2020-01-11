@@ -1,0 +1,31 @@
+{
+  "name": "jwproxy-repl",
+  "version": "1.0.0",
+  "description": "A JWProxy server REPL to play with webdriver requests",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "./bin/repl",
+    "postinstall": "./bin/install"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "jwproxy-repl": "./bin/repl"
+  },
+  "files": [
+    "jwproxy-repl-caps.js",
+    "./bin/*",
+    "./lib/*"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [],
+  "author": "vrunoa <vruno.alassia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "appium-base-driver": "^5.1.3",
+    "minimist": "^1.2.0",
+    "promirepl": "^2.0.1",
+    "repl": "^0.1.3"
+  }
+}
