@@ -6,7 +6,7 @@ A JWProxy server REPL to play with webdriver requests
 npm install -g jwproxy-repl
 ```
 
-# Usage
+# Quick usage
 ```
 # Starting the jwproxy-repl
 jwproxy-repl --opts='{"server":"<SAUCE_USERNAME>:<SAUCE_ACCESS_KEY>8@ondemand.saucelabs.com", "base":"/wd/hub"}'
@@ -14,8 +14,8 @@ jwproxy-repl --opts='{"server":"<SAUCE_USERNAME>:<SAUCE_ACCESS_KEY>8@ondemand.sa
 # Starting a session
 jwproxy.command('/session', 'POST', caps.firefox)
 
-# Taking a full page screenshot
-jwproxy.command('', 'GET)
+# Taking a full page screenshot on firefox
+jwproxy.command('/moz/screenshot/full', 'GET)
 
 # Deleting the session
 jwproxy.command('', 'DELETE')

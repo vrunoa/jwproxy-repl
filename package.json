@@ -4,7 +4,8 @@
   "description": "A JWProxy server REPL to play with webdriver requests",
   "main": "./lib/index.js",
   "scripts": {
-    "start": "./bin/repl"
+    "start": "./bin/repl",
+    "postinstall": "./bin/install"
   },
   "preferGlobal": true,
   "bin": {

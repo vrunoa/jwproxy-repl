@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const homedir = require('os').homedir();
+const path = require('path');
+const fs = require('fs');
+const DEFAULT_JWPROXY_CAPS_SRC_NAME = 'jwproxy-repl-caps.js';
+const DEFAULT_JWPROXY_CAPS_DEST_NAME = '.jwproxy-repl.js';
+const DEFAULT_JWPROXY_CAPS_DEST = path.join(homedir, DEFAULT_JWPROXY_CAPS_DEST_NAME);
+const DEFAULT_JWPROXY_CAPS_SRC = path.join('./', DEFAULT_JWPROXY_CAPS_SRC_NAME);
+try {
+  if (!fs.existsSync(DEFAULT_JWPROXY_CAPS_DEST)) {
+    console.log('Copying .jwproxy-repl.js to user home folder');
+    fs.copyFileSync(DEFAULT_JWPROXY_CAPS_SRC, DEFAULT_JWPROXY_CAPS_DEST);
+  } else {
+    console.log('Skipping overriding .jwproxy-repl.js as it already exists in user home folder');
+  }
+} catch(err) {
+  console.error(err);
+  process.exit(1);
+}
