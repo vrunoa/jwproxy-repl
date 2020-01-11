@@ -1,6 +1,6 @@
 {
   "name": "jwproxy-repl",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "A JWProxy server REPL to play with webdriver requests",
   "main": "./lib/index.js",
   "scripts": {
