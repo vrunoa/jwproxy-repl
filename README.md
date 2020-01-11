@@ -27,3 +27,9 @@ Deleting the session
 ```
 jwproxy.command('', 'DELETE')
 ```
+
+Moar
+```
+jwproxy.command('/session', 'POST', {desiredCapabilities: {browserName: "chrome"}})
+```
+you can also add this capabilities directly on `~/.jwproxy-repl.js` for quick access
